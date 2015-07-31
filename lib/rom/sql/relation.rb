@@ -74,7 +74,7 @@ module ROM
       # @return [Relation]
       #
       # @api public
-      def prefix(name = Inflector.singularize(table))
+      def prefix(name)
         rename(header.prefix(name).to_h)
       end
 
